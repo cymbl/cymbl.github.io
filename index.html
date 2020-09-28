@@ -3,19 +3,27 @@
 <head>
 <title>Cymbl Cloud Compiler</title>
 <link rel="icon" type="image/png"  href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
 <style>
     body {
+        height: 100vh;
+        margin: 0;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .main {
+        height: 100%;
+        padding: 20px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
-        margin: 0;
     }
-
     .logo {
         cursor: pointer;
     }
@@ -43,6 +51,7 @@
 </style>
 
 
+<div class="main">
 <svg width="166" height="77" viewBox="0 0 166 77" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo" onclick="playCymbl()">
 <path class="ring ring1" d="M51.6134 49.4506C48.4646 52.5994 44.2138 54.2525 40.0416 54.2525C31.225 54.2525 23.8253 48.5059 23.8253 38.0362C23.8253 27.5664 31.225 21.8199 40.0416 21.8199C44.2138 21.8199 48.5434 23.3155 51.6922 26.4643L54.2112 24.024C50.2752 20.1667 45.1584 18.1987 40.0416 18.1987C28.7846 18.1987 20.0467 25.7559 20.0467 38.0362C20.0467 50.3165 29.0995 57.8736 40.0416 57.8736C45.1584 57.8736 50.2752 55.9843 54.2112 52.0483L51.6134 49.4506Z" fill="#DAA85D" />
 <path class="ring ring2" opacity="0.5" d="M55.7309 53.9571C51.3533 58.3347 45.4435 60.633 39.6432 60.633C27.3859 60.633 17.0986 52.6439 17.0986 38.0883C17.0986 23.5328 27.3859 15.5437 39.6432 15.5437C45.4435 15.5437 51.4627 17.6231 55.8403 22.0007L59.3424 18.608C53.8704 13.2455 46.7568 10.5095 39.6432 10.5095C23.9933 10.5095 11.8454 21.0157 11.8454 38.0883C11.8454 55.161 24.431 65.6672 39.6432 65.6672C46.7568 65.6672 53.8704 63.0407 59.3424 57.5687L55.7309 53.9571Z" fill="#DAA85D" />
@@ -74,6 +83,8 @@
 </div>
 
 <!--End mc_embed_signup-->
+
+</div>
 
 
 <script>
